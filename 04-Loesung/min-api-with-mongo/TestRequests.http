@@ -38,3 +38,15 @@ DELETE http://localhost:5001/api/movies/1
 
 ###
 DELETE http://localhost:5001/api/movies/2
+
+###
+PUT http://localhost:5001/api/movies/1
+content-type: application/json
+
+{
+    "id": "4",
+    "title": "Top Gun: Maverick",
+    "year": "2022",
+    "summary": "Spüre das Bedürfnis... Das Bedürfnis nach Geschwindigkeit.",
+    "actors": ["Tom Cruise", "Miles Teller", "Jenniver Connelly"]
+}
