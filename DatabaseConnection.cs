@@ -32,4 +32,6 @@ app.MapGet("/check", (IOptions<DatabaseSettings> options) =>
     }
 });
 
+
+
 app.Run();

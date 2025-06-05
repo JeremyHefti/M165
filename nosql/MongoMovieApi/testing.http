@@ -1,0 +1,51 @@
+### Create Movie
+POST http://localhost:5000/api/movies
+Content-Type: application/json
+
+{
+  "id": "1",
+  "title": "Inception",
+  "year": 2010,
+  "summary": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+  "actors": [
+    "Leonardo DiCaprio",
+    "Joseph Gordon-Levitt",
+    "Ellen Page"
+  ]
+}
+
+### Read all Movies
+GET http://localhost:5000/api/movies
+
+### Read Movie by ID
+GET http://localhost:5000/api/movies/1
+
+### Search Movies
+GET http://localhost:5000/api/movies/search?title=Inception&year=2010
+
+### Get Movie Stats
+GET http://localhost:5000/api/movies/stats
+
+### Update Movie
+PUT http://localhost:5000/api/movies/1
+Content-Type: application/json
+
+{
+  "id": "1",
+  "title": "Inception Updated",
+  "year": 2010,
+  "summary": "Updated summary for the movie.",
+  "actors": [
+    "Leonardo DiCaprio",
+    "Tom Hardy"
+  ]
+}
+
+### Delete Movie
+DELETE http://localhost:5000/api/movies/1
+
+### Check Service
+GET http://localhost:5000/check
+
+### Root Endpoint
+GET http://localhost:5000/
